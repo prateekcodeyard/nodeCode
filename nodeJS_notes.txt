@@ -1,0 +1,16 @@
+nodeJS notes
+
+window => global
+document => process
+
+commands
+
+process.exit()	// to exit process
+
+/***** PASSING TITLE IN NODE CLI FOR USING YARGS******/
+node app.js --title="asdf 2"  // valid and allows spaces
+node app.js --title "asdf 2"  // also valid
+node app.js --title=asdf      // also valid but doesn't allow spaces
+node app.js --title='asdf 2'  // breaks on windows
+
+npm install yargs@4.7.1 --save  // specifying version number
