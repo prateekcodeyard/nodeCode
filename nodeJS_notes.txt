@@ -7,10 +7,14 @@ commands
 
 process.exit()	// to exit process
 
+npm install nodemon -g	// for live server watching for changes and refreshing
+nodemon app.js		// command for running the entry file
+
 /***** PASSING TITLE IN NODE CLI FOR USING YARGS******/
 node app.js --title="asdf 2"  // valid and allows spaces
 node app.js --title "asdf 2"  // also valid
 node app.js --title=asdf      // also valid but doesn't allow spaces
-node app.js --title='asdf 2'  // breaks on windows
+node app.js --title='asdf 2'  // breaks on windows due to spaces
 
 npm install yargs@4.7.1 --save  // specifying version number
+
